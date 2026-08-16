@@ -29,9 +29,9 @@ function ProjectsPreview() {
           {projectPlaceholders.map((project, index) => (
             <div
               key={project}
-              className="group min-h-64 overflow-hidden rounded-xl border border-[var(--color-border)] bg-white shadow-[0_16px_40px_rgba(63,65,67,0.08)]"
+              className="group min-h-64 overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_16px_40px_var(--color-shadow)]"
             >
-              <div className="flex h-full min-h-64 flex-col justify-between bg-[linear-gradient(145deg,#ffffff,#f7f7f6)] p-5">
+              <div className="flex h-full min-h-64 flex-col justify-between bg-[var(--color-placeholder-gradient)] p-5">
                 <span className="text-sm font-bold text-[var(--color-mota-orange)]">
                   0{index + 1}
                 </span>

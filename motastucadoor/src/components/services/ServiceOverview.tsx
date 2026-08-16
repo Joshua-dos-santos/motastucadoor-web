@@ -45,11 +45,11 @@ function ServiceOverview() {
               <Card key={service.id} className="overflow-hidden p-0">
                 <div className="grid gap-0 lg:grid-cols-[0.85fr_1.15fr]">
                   <div
-                    className="min-h-56 bg-[linear-gradient(135deg,#ffffff,#f7f7f6)] p-6"
+                    className="min-h-56 bg-[var(--color-placeholder-gradient)] p-6"
                     aria-label={`${service.title} beeldvlak`}
                     role="img"
                   >
-                    <div className="flex h-full min-h-44 flex-col justify-between rounded-lg border border-[var(--color-border)] bg-white/70 p-5">
+                    <div className="flex h-full min-h-44 flex-col justify-between rounded-lg border border-[var(--color-border)] bg-[color-mix(in_srgb,var(--color-surface)_70%,transparent)] p-5">
                       <span className="text-sm font-bold text-[var(--color-mota-orange)]">
                         0{index + 1}
                       </span>
@@ -77,7 +77,7 @@ function ServiceOverview() {
           })}
         </div>
 
-        <div className="mt-10 rounded-xl bg-[var(--color-mota-dark)] p-6 text-white md:flex md:items-center md:justify-between md:gap-8 md:p-8">
+        <div className="mt-10 rounded-xl bg-[var(--color-footer-background)] p-6 text-white md:flex md:items-center md:justify-between md:gap-8 md:p-8">
           <div>
             <h2 className="text-2xl text-white md:text-3xl">
               Bespreek jouw werkzaamheden

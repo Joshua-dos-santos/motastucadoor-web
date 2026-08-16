@@ -19,7 +19,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   primary:
     "border-transparent bg-[var(--color-mota-orange)] text-white shadow-sm hover:bg-[#d93d19] focus-visible:outline-[var(--color-mota-orange)]",
   secondary:
-    "border-[var(--color-mota-dark)] bg-white text-[var(--color-mota-dark)] hover:border-[var(--color-mota-orange)] hover:text-[var(--color-mota-orange)] focus-visible:outline-[var(--color-mota-dark)]",
+    "border-[var(--color-mota-dark)] bg-[var(--color-surface)] text-[var(--color-mota-dark)] hover:border-[var(--color-mota-orange)] hover:text-[var(--color-mota-orange)] focus-visible:outline-[var(--color-mota-dark)]",
 };
 
 function Button(props: ButtonProps) {

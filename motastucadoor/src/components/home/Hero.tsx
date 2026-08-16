@@ -26,11 +26,11 @@ function Hero() {
           </div>
 
           <div
-            className="min-h-[320px] rounded-xl border border-[var(--color-border)] bg-[linear-gradient(135deg,#f7f7f6_0%,#ffffff_55%,#f4ddd7_100%)] p-5 shadow-[0_24px_60px_rgba(63,65,67,0.12)] lg:min-h-[460px]"
+            className="min-h-[320px] rounded-xl border border-[var(--color-border)] bg-[var(--color-hero-gradient)] p-5 shadow-[0_24px_60px_var(--color-shadow)] lg:min-h-[460px]"
             aria-label="Strakke stucwerk afwerking"
             role="img"
           >
-            <div className="flex h-full min-h-[280px] flex-col justify-end rounded-lg border border-white/80 bg-white/55 p-6">
+            <div className="flex h-full min-h-[280px] flex-col justify-end rounded-lg border border-[var(--color-border)] bg-[color-mix(in_srgb,var(--color-surface)_70%,transparent)] p-6">
               <div className="h-2 w-24 rounded-full bg-[var(--color-mota-orange)]" />
               <p className="mt-4 max-w-sm text-base font-semibold leading-7 text-[var(--color-mota-dark)]">
                 Strakke afwerking, rustige uitstraling en aandacht voor detail.

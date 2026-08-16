@@ -8,15 +8,19 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[var(--color-border)] bg-[var(--color-mota-dark)] py-12 text-white">
+    <footer className="border-t border-[var(--color-border)] bg-[var(--color-footer-background)] py-12 text-white">
       <Container>
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]">
           <div>
-            <Link to="/" className="inline-flex no-underline" aria-label="Mota Stucadoor home">
+            <Link
+              to="/"
+              className="theme-logo-link inline-flex no-underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              aria-label="Mota Stucadoor home"
+            >
               <img
                 src={logo}
                 alt="Mota Stucadoor"
-                className="h-12 w-auto brightness-0 invert"
+                className="h-12 w-auto"
                 loading="lazy"
                 width="160"
                 height="48"

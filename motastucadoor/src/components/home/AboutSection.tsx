@@ -25,7 +25,7 @@ function AboutSection() {
             {trustPoints.map((point) => (
               <div
                 key={point}
-                className="flex items-start gap-4 rounded-xl border border-[var(--color-border)] bg-white p-5"
+                className="flex items-start gap-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5"
               >
                 <CheckCircle2
                   className="mt-1 shrink-0 text-[var(--color-mota-orange)]"

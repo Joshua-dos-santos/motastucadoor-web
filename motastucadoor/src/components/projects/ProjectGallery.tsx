@@ -82,11 +82,11 @@ function ProjectGallery() {
           {placeholders.map((item, index) => (
             <article
               key={item}
-              className="overflow-hidden rounded-xl border border-[var(--color-border)] bg-white shadow-[0_16px_40px_rgba(63,65,67,0.08)]"
+              className="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_16px_40px_var(--color-shadow)]"
             >
               <button
                 type="button"
-                className="flex aspect-[4/3] w-full flex-col justify-between bg-[linear-gradient(135deg,#ffffff,#f7f7f6)] p-5 text-left transition-colors hover:bg-[linear-gradient(135deg,#ffffff,#fff3ef)] focus-visible:outline-2 focus-visible:outline-inset focus-visible:outline-[var(--color-mota-orange)]"
+                className="flex aspect-[4/3] w-full flex-col justify-between bg-[var(--color-placeholder-gradient)] p-5 text-left transition-colors hover:bg-[var(--color-placeholder-hover)] focus-visible:outline-2 focus-visible:outline-inset focus-visible:outline-[var(--color-mota-orange)]"
                 aria-label={`Projectbeeld ${item} openen`}
                 onClick={() => setActiveIndex(index)}
               >
@@ -115,7 +115,7 @@ function ProjectGallery() {
             }
           }}
         >
-          <div className="w-full max-w-4xl rounded-xl bg-white p-4 shadow-[0_24px_80px_rgba(0,0,0,0.35)] md:p-6">
+          <div className="w-full max-w-4xl rounded-xl bg-[var(--color-surface)] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.35)] md:p-6">
             <div className="mb-4 flex items-center justify-between gap-4">
               <h2 id="project-lightbox-title" className="text-xl md:text-2xl">
                 Projectbeeld 0{activeProject}
@@ -132,7 +132,7 @@ function ProjectGallery() {
             </div>
 
             <div
-              className="flex aspect-[4/3] min-h-64 flex-col justify-between rounded-lg border border-[var(--color-border)] bg-[linear-gradient(135deg,#ffffff,#f7f7f6)] p-6"
+              className="flex aspect-[4/3] min-h-64 flex-col justify-between rounded-lg border border-[var(--color-border)] bg-[var(--color-placeholder-gradient)] p-6"
               role="img"
               aria-label={`Groot projectbeeld 0${activeProject}`}
             >

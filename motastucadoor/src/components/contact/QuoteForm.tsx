@@ -18,7 +18,7 @@ const serviceOptions = [
 ];
 
 const fieldClasses =
-  "mt-2 w-full rounded-md border border-[var(--color-border)] bg-white px-4 py-3 text-base text-[var(--color-mota-dark)] outline-none transition-colors focus:border-[var(--color-mota-orange)] focus:ring-2 focus:ring-[rgba(240,69,29,0.18)]";
+  "mt-2 w-full rounded-md border border-[var(--color-border)] bg-[var(--color-surface-muted)] px-4 py-3 text-base text-[var(--color-mota-dark)] outline-none transition-colors focus:border-[var(--color-mota-orange)] focus:ring-2 focus:ring-[rgba(240,69,29,0.18)]";
 
 const errorClasses = "mt-2 text-sm font-semibold text-[var(--color-mota-orange)]";
 
@@ -123,7 +123,7 @@ function QuoteForm() {
   return (
     <Card className="p-6 md:p-8">
       {!isFormspreeConfigured ? (
-        <div className="mb-5 rounded-md border border-[var(--color-mota-orange)] bg-[#fff3ef] px-4 py-3 text-sm font-semibold text-[var(--color-mota-dark)]">
+        <div className="mb-5 rounded-md border border-[var(--color-mota-orange)] bg-[var(--color-callout-background)] px-4 py-3 text-sm font-semibold text-[var(--color-mota-dark)]">
           Development error: stel `VITE_FORMSPREE_FORM_ID` in om het formulier
           te kunnen versturen.
         </div>
@@ -133,8 +133,8 @@ function QuoteForm() {
         <div
           className={`mb-5 rounded-md border px-4 py-3 text-sm font-semibold ${
             submitStatus === "success"
-              ? "border-green-700 bg-green-50 text-green-800"
-              : "border-[var(--color-mota-orange)] bg-[#fff3ef] text-[var(--color-mota-dark)]"
+              ? "border-[var(--color-success-border)] bg-[var(--color-success-background)] text-[var(--color-success-text)]"
+              : "border-[var(--color-mota-orange)] bg-[var(--color-callout-background)] text-[var(--color-mota-dark)]"
           }`}
           role="status"
         >

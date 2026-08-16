@@ -6,7 +6,7 @@ function QuoteCTA() {
   return (
     <Section>
       <Container>
-        <div className="rounded-xl bg-[var(--color-mota-dark)] px-6 py-10 text-white md:px-10 lg:flex lg:items-center lg:justify-between lg:gap-10">
+        <div className="rounded-xl bg-[var(--color-footer-background)] px-6 py-10 text-white md:px-10 lg:flex lg:items-center lg:justify-between lg:gap-10">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.12em] text-white/65">
               Offerte
